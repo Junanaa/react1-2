@@ -1,6 +1,35 @@
 # react1-2
 - React1 강의정리
 - 202130211 박준한
+## 3월 27일 강의
+### JSX
+1. JSX란 무엇인가?  
+Javascript에 XML을 추가한 확장한 문법입니다.
+2. JSX의 역할
+- React가 creatElement함수를 사용하여 자동으로 자바스크립트로 변환해 준다.    
+- 만일 JS로 작업할 경우 직접 creatElement함수를 사용해야함.  
+- 결국 JSX는 가독성을 높여주는 역할을 함.  
+- JSX는 내부적으로 XML/HTML 코드를 자바스크립트 코드로 변환함.  
+3. JSX의 장점
+- 코드가 간결해짐
+- 가독성이 향상 됨
+- Injection Attack이라 불리는 해킹 방법을 방어함으로써 보안에 강함.
+4. JSX 사용법 
+- 모든 자바스킙트 문법을 지원함
+- 자바스크립트 문법에 XML과 HTML을 섞어서 사용함
+- 아래 코드의 2번라인처럼 섰어서 사용
+- 만일 html이나 xml에 자바스크립트 코드를 사용하고 싶으면 {}괄호를 사용해야함.
+```jsx
+const name = '소플';
+const element = <h1>안녕 {name}</h1>;
+
+ReactDOM.render(
+    element,
+    document.getElementById('root')
+);
+```
+
+
 
 ## 3월 20일 강의
 ### 1. 리액트는 무엇인가?
@@ -48,6 +77,7 @@
 ## 3월 13일 강의 
 
 ### HTML
+
 1. HTML이란 무엇인가?
     > [Hyper Text Markup Language] 웹 페이지 표시를 위해 개발된 지배적인 마크업 언어다.
     > 또한, HTML은 제목, 단락, 목록 등과 같은 본문을 위한 구조적 의미를 나타내는 것뿐만 아니라 링크, 인용과 그 밖의 항목으로 구조적 문서를 만들 수 있는 방법을 제공한다.
